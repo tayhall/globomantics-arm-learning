@@ -29,6 +29,6 @@ jobs:
           scope: subscription
           subscriptionId: cc1f3cea-ce78-45d2-bc45-f9137fce9acc
           region: "UK South"
-          template: ./arm-templates/resource.json
+          template: ./arm-templates/resourcegroup.json
           deploymentName: rg-githubactions
 
