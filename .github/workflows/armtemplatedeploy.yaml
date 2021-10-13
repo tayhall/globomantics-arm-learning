@@ -23,9 +23,12 @@ jobs:
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-      - name: Azure CLI Action
-        uses: Azure/cli@1.0.4
+      - name: Deploy resource group rg-githubactions
+        uses: Azure/arm-deploy@v1
         with:
-          inlinescript: |
-            az deployment sub create --location "UK South" --template-file ./arm-templates/resourcegroup.json
+          scope: subscription
+          subscriptionId: cc1f3cea-ce78-45d2-bc45-f9137fce9acc
+          region: "UK South"
+          template: ./arm-templates/resource.json
+          deploymentName: rg-githubactions
 
