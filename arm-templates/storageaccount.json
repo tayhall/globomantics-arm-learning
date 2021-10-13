@@ -23,7 +23,7 @@
     "functions": [],
     "variables": {},
     "resources": [{
-        "name": "[parameters('storageAccountName')",
+        "name": "[parameters('storageAccountName')]",
         "type": "Microsoft.Storage/storageAccounts",
         "apiVersion": "2021-04-01",
         "tags": {
