@@ -13,7 +13,7 @@
             "description": "Enter the location"
         }
     },
-    "StorageAccountSKU": {
+    "sku": {
         "type": "string",
         "metadata": {
             "description": "Enter a storage account SKU"
@@ -32,7 +32,7 @@
         "location": "[parameters('location')]",
         "kind": "StorageV2",
         "sku": {
-            "name": "[parameters('StorageAccountSKU')]",
+            "name": "[parameters('sku')]",
             "tier": "Premium"
         }
     }],

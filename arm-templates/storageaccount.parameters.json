@@ -3,13 +3,13 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "storageAccountName": {
-            "value": "" // TODO: Fill in parameter value
+            "value": "globostg001" 
         },
         "location": {
-            "value": "" // TODO: Fill in parameter value
+            "value": "UK South"
         },
-        "StorageAccountSKU": {
-            "value": "" // TODO: Fill in parameter value
+        "sku": {
+            "value": "Standard_LRS"
         }
     }
 }
